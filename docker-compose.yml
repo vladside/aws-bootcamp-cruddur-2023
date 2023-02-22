@@ -17,7 +17,7 @@ services:
       - "3000:3000"
     volumes:
       - ./frontend-react-js:/app
-networks: 
+networks:
   internal-network:
     driver: bridge
     name: cruddur
