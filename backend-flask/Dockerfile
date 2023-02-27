@@ -9,4 +9,4 @@ RUN chmod +x start.sh
 ENV FLASK_ENV=development
 
 EXPOSE ${PORT}
-CMD [ "./start.sh"]
+CMD ["sh", "./start.sh"]
