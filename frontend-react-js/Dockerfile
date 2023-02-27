@@ -8,7 +8,9 @@ RUN npm ci
 WORKDIR /node/app
 COPY . .
 
+RUN chmod +x start.sh
+
 EXPOSE ${PORT}
 
 ENV PORT=3000
-CMD ["npm", "start"]
+CMD [ "./start.sh"]
